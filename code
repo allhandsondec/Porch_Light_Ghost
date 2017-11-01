@@ -1,0 +1,10 @@
+let index2 = 0
+loops.forever(function () {
+    for (let index2 = 0; index2 <= 9; index2++) {
+        light.pixels.setPixelColor(index2 - 1, Colors.Black)
+        light.pixels.setPixelColor(index2, Colors.Violet)
+        loops.pause(100)
+    }
+    light.pixels.setPixelColor(9, Colors.Black)
+})
+index2 = 0
